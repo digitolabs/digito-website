@@ -17,7 +17,6 @@ const PercentageCards = () => {
             scrub: true,
             toggleActions: "restart pause none none"
         }, 
-        opacity: 0.5,
         duration: 3,
         scale: 0.8});
     }, [percentages])

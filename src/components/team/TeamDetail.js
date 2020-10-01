@@ -1,13 +1,13 @@
 import React, { useEffect } from "react";
 import { connect } from "react-redux";
 import ExtraRectangle from "../LandingPage/sixthSection/ExtraRectangle";
-import images from "../../assets/imageUrls";
 import { useParams } from "@reach/router";
 import TeamHeading from "./TeamHeading";
 import TeamList from "./TeamList";
 import MemberCard from "./MemberCard";
 import Spinner from "../common/Spinner";
 import { fetchDepartment } from "../../actions";
+import teamData from '../../config/usersDb';
 
 const TeamDetail = (props) => {
   const param = useParams();
@@ -29,7 +29,7 @@ const TeamDetail = (props) => {
     {
       team: "finance",
       message: `
-    We love you so much.
+    We are here to serve you wholeheartedly.
     `,
     },
   ];
@@ -43,15 +43,28 @@ const TeamDetail = (props) => {
     };
   };
   const displayMember = () => {
-    return props.team.map((member) => {
-      const { id, name, role, avatar } = member;
-      return <MemberCard key={id} name={name} role={role} avatar={avatar} />;
-    });
+
+    const ITPeople = teamData.filter(member => member.team.toLowerCase() === 'IT'.toLowerCase());
+    const FinancePeople = teamData.filter(member => member.team.toLowerCase() === 'finance'.toLowerCase());
+
+    if(param.department.toLowerCase() === 'IT'.toLowerCase()){
+      return ITPeople.map((member) => {
+        const { id, name, role, avatar} = member;
+        return <MemberCard key={id} name={name} role={role} avatar={avatar} />;
+      });
+    }else if(param.department.toLowerCase() === 'finance'.toLowerCase()){
+      return FinancePeople.map((member) => {
+        const { id, name, role, avatar} = member;
+        return <MemberCard key={id} name={name} role={role} avatar={avatar} />;
+      });
+    }else{
+      return <div>Users not found</div>
+    }
   };
 
   return (
     <div className="team-content ">
-      { props.team === [] ? (
+      { teamData === [] ? (
         <Spinner />
       ) : (
         <>

@@ -1,12 +1,12 @@
 import React from "react";
 
-const FormIput = ({ type, placeholder, name, value, onChange }) => {
+const FormIput = ({ type, placeholder, name, value, onChange, required }) => {
   return (
     <div>
       {type === "textarea" ? (
         <div className="text-area">
           <textarea
-            required
+            required = {required}
             type={type}
             placeholder={placeholder}
             value={value}
@@ -27,7 +27,7 @@ const FormIput = ({ type, placeholder, name, value, onChange }) => {
           value={value}
           name={name}
           onChange={onChange}
-          required
+          required = {required}
         />
       )}
     </div>

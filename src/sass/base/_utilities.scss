@@ -5,7 +5,7 @@
    }
 }
 .active{
-    border-bottom: .2rem solid $color-primary-dark-blue;
+    border-bottom: .2rem solid #66bafb;
     text-decoration: none;
 }
 .hide{
@@ -101,7 +101,7 @@
 }
 
 .extra-rectangle{
-    @include extra-rectangle($color-secondary-dark-gray);
+    @include extra-rectangle(#005290);
     width: 90%;
     @include positioningContent(center, center);
     .social-icons-container{

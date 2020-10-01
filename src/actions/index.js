@@ -23,7 +23,6 @@ const fetchPeople = async () => {
 
 export const sendMessageAction = (userInput) => async dispatch => {
     const data = await axios.post(`${actionTypes.BACK_END_BASE_URL}/contact`, userInput);
-    console.log('data.data.message', data);
     dispatch({type: actionTypes.sendMessage, payload: data});
    }
 
@@ -38,3 +37,21 @@ export const fetchDepartment = (department) => async dispatch => {
     dispatch({type: actionTypes.department, payload: departmentMembers});
 }
 
+export const login =  (userInput) => async (dispatch) => {
+    try{
+    const data = await axios.post(`${actionTypes.BACK_END_BASE_URL}/login`, userInput);
+    dispatch({type: actionTypes.login, payload: data});
+   
+    } catch(err){
+    console.log('err', err);
+    //   dispatch({type: actionTypes.login_error, payload: err});
+    }
+    
+}
+
+
+export const addMemberAction = (userInput) => async dispatch => {
+    const data = await axios.post(`${actionTypes.BACK_END_BASE_URL}/people`, userInput);
+    console.log('data ----', data);
+    dispatch({type: actionTypes.addMember, payload: data});
+   }

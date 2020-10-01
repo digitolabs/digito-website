@@ -1,130 +1,79 @@
-.our-process{
-    position: relative;
-    margin-top: 15vh;
-    &__content{
-        display: flex;
-        .left-section{
-        min-height: 80vh;
-        flex-basis: 50%;
+.our-process {
+  position: relative;
+  margin-top: 15vh;
+  &__content {
+    width: 50%;
+    margin: 0 auto;
+    @include responsive(tab-port) {
+        width: 70%;
+      }
+    @include responsive(phone) {
+        width: 90%;
+      }
+    .left-section {
+      height: 50vh;
+      flex-basis: 50%;
+      position: relative;
+      overflow: hidden;
+      color: $color-primary-white;
+      @include positioningContent(flex-end, center);
 
-        @include positioningContent(center, center);
-        position: relative;
-        padding: 10rem;
-        color: $color-primary-white;
-        
-        @include responsive(phone){
-            min-height: 45vh;
-        }
-        .process-bg-img{
-            img{
-                z-index: -2;
-                top: 0;
-            left: 0;
-            position: absolute;
-            object-fit: cover;
-            height: 100%;
+
+      @include responsive(tab-port) {
+        height: 40vh;
+      }
+      .process-bg-img {
+      @include positioningContent(flex-end, center);
+     
+        img {
+
+          object-fit: cover;
+          width: 60%;
+          @include responsive(phone) {
             width: 100%;
-            }
+          }
         }
-        .model{
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: -1;
-            object-fit: cover;
-            height: 100%;
-            width: 100%;
-            background-color: rgba($color: $color-primary-dark-blue, $alpha: .9);
-        }
-        }
-        .right-section{
-            flex-basis: 50%;
-            min-height: 80vh;
-            position: relative;
-
-            @include responsive(phone){
-            min-height: 45vh;
-            }
-
-            .upper-part{
-                padding-bottom: 4rem;
-
-                .message{
-                    width: 60%;
-                    margin: 5rem auto;
-                    padding: 2rem;
-                    @include textStyle(1.6rem);
-
-                    @include responsive(tab-port){
-                    width: 90%;
-                    flex-direction: column;
-                    font-size: $phone-font-size;
-                    }
-
-                }
-                font-weight: 300;
-                color: $color-gray-opacity-80;
-                line-height: 2.5rem;
-              
-            }
-            .lower-part{
-
-            @include positioningContent(flex-end, center);
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            }
-        }
-
-        @include responsive(tab-port){
-            flex-direction: column;
-        }
-
-        .design-button{
-            width: 15%;
-            height: 6rem;
-            position: absolute;
-            top: 45%;
-            left: 42.5%;
-            display: flex;
-            border-radius: 1rem;
-            overflow: hidden;
-            border: none;
-            box-shadow: $box-shadow;
-
-            .left{
-                flex-basis: 50%;
-                background-color: $color-primary-white;
-                padding: .2rem;
-                img{
-                    height: 80%;
-                    width: 60%;
-                }
-            @include positioningContent(center, center);
-
-            }
-            .right{
-                flex-basis: 50%;
-                background-color: rgba($color: $color-primary-dark-blue, $alpha: .9);
-                padding: .2rem;
-                color: $color-primary-white;
-                @include positioningContent(center, center);
-                font-size: 1.5rem;
-                font-weight: bold;
-
-
-            }
-            @include responsive(tab-port){
-                width: 30%;
-                top: 45%;
-                left: 0%;
-            }
-            @include responsive(phone){
-                width: 40%;
-                top: 40%;
-            }
-        }
-
+      }
     }
-  
+    .right-section {
+      flex-basis: 50%;
+      height: 40vh;
+      position: relative;
+
+      @include responsive(phone) {
+        min-height: 45vh;
+      }
+
+      .upper-part {
+        padding-bottom: 4rem;
+
+        .message {
+          width: 60%;
+          margin: 2rem auto;
+          padding: 2rem 0rem;
+          font-size: 1.3rem;
+
+          @include responsive(tab-port) {
+            width: 100%;
+            flex-direction: column;
+            font-size: $phone-font-size;
+          }
+        }
+        font-weight: 300;
+        color: $color-gray-opacity-80;
+        line-height: 2.5rem;
+      }
+      .lower-part {
+        @include positioningContent(flex-end, center);
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+      }
+    }
+
+    @include responsive(tab-port) {
+      flex-direction: column;
+    }
+
+  }
 }

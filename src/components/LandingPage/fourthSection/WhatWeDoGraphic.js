@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import images from '../../../assets/imageUrls';
+import images from '../../../assets/svg/coding.png';
 
 
 const WhatWeDoGraphic = ({referance, entry, inView}) => {
@@ -21,8 +21,7 @@ const WhatWeDoGraphic = ({referance, entry, inView}) => {
 
     return(
         <div className={`fourth-section__image`} ref={image}>
-          <img src={images.devices_gif} alt="all apple products"/>
-          <img src={images.screenshot} alt="screenshot" className="screenshot"/>
+          <img src={images} alt="screenshot" className="screenshot"/>
         </div>
     )
 }

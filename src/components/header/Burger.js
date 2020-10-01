@@ -15,6 +15,9 @@ const Ul = styled.ul`
 
       .link{
         text-decoration: none;
+        color: #aad6f8
+      }
+      .link:hover{
         color: #fff
       }
     }
@@ -38,8 +41,8 @@ const Ul = styled.ul`
         li {
             
            .link {
-                color: #fff;
-                font-weight: bold;
+                color: #aad6f8;
+                font-weight: 300;
                 font-size: 18px;
            }
         }
@@ -51,7 +54,7 @@ const StyledBurger = styled.div`
   @media (max-width: 900px) {
     width: 35px;
     height: 35px;
-    background-color: ${({clicked}) => clicked ? 'transparent' : '#0570c1'};
+    background-color: transparent;
     text-align: center;
     border-radius: 50px;
     display: flex;

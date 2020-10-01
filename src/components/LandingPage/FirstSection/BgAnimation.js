@@ -59,7 +59,6 @@ const topbox = React.createRef();
             </div>
             <div className="box-2">
               <img src={images.last_box_open} alt="openkbox" className="big-box"/>
-              <img src={images.white_box} alt="whitebox" className="small-box" ref={box2Small}/>
             </div>
             <div className="box-3">
               <img src={images.white_box} alt="whitebox"  ref={box3}/>

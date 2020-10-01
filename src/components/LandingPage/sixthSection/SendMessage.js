@@ -25,7 +25,6 @@ class SendMessage extends Component {
     
   };
 
-
   onFormSubmit = (e) => {
     e.preventDefault();
     const { sendMessageAction } = this.props;
@@ -70,6 +69,7 @@ class SendMessage extends Component {
             value={this.state.email}
             name="email"
             onChange={this.onInputChange}
+            required={true}
           />
           <FormIput
             type="text"
@@ -77,6 +77,7 @@ class SendMessage extends Component {
             value={this.state.subject}
             name="subject"
             onChange={this.onInputChange}
+            required={true}
           />
           <FormIput
             type="textarea"
@@ -84,6 +85,7 @@ class SendMessage extends Component {
             value={this.state.message}
             name="message"
             onChange={this.onInputChange}
+            required={true}
           />
           <SubmitButton />
         </form>

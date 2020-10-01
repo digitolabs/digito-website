@@ -1,7 +1,8 @@
 .admin {
-    height: 90vh;
+    min-height: 90vh;
     margin-top: 8vh;
     position: relative;
+
 
     @include responsive(tab-port){
         height: 80vh;
@@ -22,17 +23,17 @@
         z-index: -1;
         height: 100%;
         width: 100%;
-      
     }
 
     .form-container{
         width: 37%;
         margin-top: 15vh;
         margin-left: auto;
+        margin-bottom: 5rem;
+
         @include responsive(tab-port){
             margin: 0rem auto;
-            width: 50%;
-            
+            width: 70%;
         }
     }
 }

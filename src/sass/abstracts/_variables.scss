@@ -1,21 +1,21 @@
 $bg-color-secondary-light-gray: #c4c4c437;
-$color-primary-white: #FFFFFF;
-$color-primary-dark-blue: #0570c1;
+$color-primary-white: #ffffff;
+$color-primary-dark-blue: #1187ee;
 $color-primary-light-blue: #048ffa;
-$color-primary-dark-opacity-70: #0570c1a5;
+$color-primary-dark-opacity-70: #005290;
 $color-secondary-dark-gray: #444444;
-$color-primary-light-black: #0C0B0B;
+$color-primary-light-black: #0c0b0b;
 $color-primary-dark-black: #000;
 $color-primary-opacity-80: rgba(0, 0, 0, 0.801);
 $color-gray-opacity-50: rgba(214, 222, 228, 0.5);
 $color-black-opacity-50: rgba(0, 0, 0, 0.5);
-$color-gray-medium: #C4C4C4;
+$color-gray-medium: #c4c4c4;
 $color-gray-opacity-40: rgba(128, 128, 128, 0.472);
 $color-gray-opacity-66: rgba(128, 128, 128, 0.664);
 $color-gray-opacity-80: rgba(128, 128, 128, 0.8);
 $color-black-model: rgba(0, 0, 0, 0.8);
 $color-animations-bg: rgba(100, 100, 100, 0.959);
-$color-primary-light-blue-full : #048ffa;
+$color-primary-light-blue-full: #015799;
 
 // font-weights
 
@@ -24,28 +24,22 @@ $regular-weight: 400;
 $bold-weight: 600;
 $black-weight: 900;
 
-// font-families 
+// font-families
 
 $base-font: Inter, "Inter UI", Helvetica, Arial, sans-serif;
-$roboto:'roboto', sans-serif;
-$poppins: 'poppins', sans-serif;
-$indie-flower: 'Indie Flower', cursive;
-$sirin-stencil: 'Sirin Stencil', cursive;
-$dosis-font: 'Dosis', sans-serif;
-
-// font-family: 'Poppins', sans-serif;
-// font-family: 'Roboto', sans-serif;
-
+$roboto: "roboto", sans-serif;
+$poppins: "poppins", sans-serif;
+$indie-flower: "Indie Flower", cursive;
+$sirin-stencil: "Sirin Stencil", cursive;
+$dosis-font: "Dosis", sans-serif;
 
 // box-shodow
 
 $box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1);
 
-
 // paddings
 
 $medium-padding: 3rem;
-
 
 // flex-basis
 
@@ -55,8 +49,7 @@ $half-flex-basis: 50%;
 
 $medium-border-radius: 1rem;
 
+// font-size
 
-// font-size 
-
-$medium-font-size: 1.8rem;
-$phone-font-size: 2.2rem
+$medium-font-size: 1.3rem;
+$phone-font-size: 2.2rem;

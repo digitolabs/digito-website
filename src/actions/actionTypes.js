@@ -4,5 +4,8 @@ module.exports = {
     sendMessageError: 'SEND_MESSAGE_ERROR',
     members: 'FETCH_MEMBERS',
     department: 'IT_DEPARTMENT',
-    BACK_END_BASE_URL: 'https://digitol-api.herokuapp.com',
+    login: 'LOGIN',
+    login_error: 'LOGIN_ERROR',
+    addMember: 'ADD_MEMBER',
+    BACK_END_BASE_URL: 'http://localhost:8080',
 }

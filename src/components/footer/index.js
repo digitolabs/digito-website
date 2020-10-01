@@ -23,7 +23,7 @@ const Footer = () => {
           <div className="footer__content--info">
             <div className="footer__info">
               <h4 className="phone-invisible">Contact us</h4>
-              <Contact icon={faComment} content="sms/call/whatsap: +25078000000"/>
+              <Contact icon={faComment} content="sms/call: +250789453215"/>
               <Contact icon={faEnvelope} content="digitolabs.contact@gmail.com"/>
               <Contact icon={faStreetView} content="KK 319 ST, Kigali, Kicukiro, Niboyi"/>
               <Contact icon={faMapMarker} content="Kigali, Rwanda"/>
@@ -32,7 +32,8 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer__free-space">
-      <p>&copy;Digitol 2020</p>
+      <p style={{color: 'rgba(214, 222, 228, 0.5)'}}>&copy;Digitol 2020</p>
+      <h1>Powered by Habineza Leon Christian</h1>
       </div>
     </div>
   );

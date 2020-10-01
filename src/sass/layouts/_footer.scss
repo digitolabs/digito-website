@@ -1,8 +1,8 @@
 .footer{
-    background-color: $color-primary-light-black;
+    background-color: #005290;
     color: $color-gray-opacity-50;
     padding: $medium-padding;
-    font-size: 1.8rem;
+    font-size: 1.3rem;
     z-index: 99;
     .footer__logo-and-content{
         display: flex;
@@ -79,6 +79,10 @@
     &__free-space{
         padding: 1rem;
         text-align: center;
-
+        h1{
+            color: #015799;
+            font-weight: 300;
+            font-size: 1.4rem;
+        }
     }
 }

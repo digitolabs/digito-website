@@ -15,7 +15,7 @@ const ProcessDetail = (props) => {
   return (
     <div className="our-process__content">
       <div className="left-section">
-        <h1>HOW WE DO WHAT WE DO</h1>
+        {/* <h1>{props.process && props.process[0].title}</h1> */}
         <div className="process-bg-img">
           <img
             src={(props.process && props.process[0].image) || images.team}
@@ -37,7 +37,7 @@ const ProcessDetail = (props) => {
           <ExtraRectangle />
         </div>
       </div>
-      <div className="design-button">
+      {/* <div className="design-button">
         <div className="left">
           <img
             src={(props.process && props.process[0].icon) || images.together}
@@ -47,7 +47,7 @@ const ProcessDetail = (props) => {
         <div className="right">
           {(props.process && props.process[0].title) || "welcome"}
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

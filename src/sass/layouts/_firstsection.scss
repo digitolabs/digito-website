@@ -25,18 +25,13 @@
             z-index: 2;
 
     }
-    &__model{
-        @include positionObsoluteTop;
-        position: absolute;
-        background-color: $color-black-model;
-        z-index: 1;
-    }
+  
     .bg-animations{
     @include positionObsoluteTop;
     display: flex;
     flex-direction: column;
     z-index: 0;
-    background-color: $color-animations-bg;
+    background-color: $color-primary-dark-blue;
      .top-div{
         flex-basis: 20%;
         text-align: center;

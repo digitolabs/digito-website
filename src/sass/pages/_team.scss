@@ -24,7 +24,7 @@
                         flex-flow: column nowrap;
                     }
                     .member-card{
-                        width: 48%;
+                        width: 45%;
                         height: 30rem;
                         position: relative;
                         margin-top: 2rem;
@@ -41,15 +41,14 @@
                             height: 78%;
                             width: 100%;
                             @include positioningContent(center, center);
-                            border: .2rem solid $color-primary-dark-blue;
-                            border-top-left-radius: 1rem;
-                            border-top-right-radius: 1rem;
+                            border-top-left-radius: .2rem;
+                            border-top-right-radius: .21rem;
                             overflow: hidden;
                             img{
                                 width: 100%;
                                 height: 100%;
-                                border-top-left-radius: 1rem;
-                                border-top-right-radius: 1rem;
+                                border-top-left-radius: .2rem;
+                                border-top-right-radius: .2rem;
                                 transition: all .5s;
                             }
                         }
@@ -63,7 +62,7 @@
                             background-color: #fff;
                             p{
                                 padding: .5rem;
-                                font-size: 1.6rem;
+                                font-size: 1.3rem;
                             }
                         }
     
@@ -101,7 +100,7 @@
                             padding: 1rem;
                             margin: 2rem auto;
                             width: 80%;
-                            @include textStyle(1.6rem);
+                            font-size: 1.3rem;
                             @include responsive(tab-port){
                                 font-size: $phone-font-size;
                                 width: 90%;

@@ -3,7 +3,7 @@ import {gsap} from 'gsap';
 import {ScrollTrigger} from 'gsap/ScrollTrigger'
 import Heading from "../../common/Heading";
 
-import images from '../../../assets/imageUrls';
+import images from '../../../assets/svg/productdelivery.png';
 
 const SecondSection = () => {
   const team = React.createRef();
@@ -32,7 +32,7 @@ const SecondSection = () => {
         </div>
       </div>
       <div className="second-section--right">
-        <img ref={team} src={images.team} alt="teamimage"/>
+        <img ref={team} src={images} alt="teamimage"/>
       </div>
     </div>
   );
