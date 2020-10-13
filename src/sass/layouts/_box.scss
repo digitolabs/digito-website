@@ -1,39 +1,18 @@
-.box-section{
-    position: relative;
-    margin-bottom: 10rem;
-    img{
-        height: 100%;
-        width: 100%;
-    }
+.box-section {
+  height: 80vh;
+  background-image: url('https://res.cloudinary.com/habinezadalvan/image/upload/v1595795055/digitol/spread-box_09.05.45-min_se1qgm.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+ 
 
-    &__cover{
-        width: 100%;
-        height: 100%;
-        background-color: rgb(2, 2, 2);
-        position: absolute;
-        color: white;
-        top: 0;
-        left: 0;
-        // font-family: $indie-flower;
-        font-size: 5rem;
-        font-weight: bolder;
-        text-align: center;
-        @include positioningContent(center, center);
-        @include responsive(tab-land){
-            font-size: 2rem;
-            background-color: $color-primary-dark-blue;
-            h1{
-                width: 80%;
-            }
-        }
+  @include responsive(phone) {
+    display: none;
+  }
+}
 
-        @include responsive(phone){
-            font-size: 2rem;
-            background-color: $color-primary-dark-blue;
-        }
-    }
-
-    @include responsive(phone){
-        display: none;
-    }
+.box-section-2{
+  height: 40vh;
+  background-image: url('https://res.cloudinary.com/habinezadalvan/image/upload/v1602551262/digitol/Box-70_v1ornv.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }

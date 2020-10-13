@@ -9,6 +9,7 @@ import SixthSection from './sixthSection';
 import Box from './boxsection/Box';
 import Heading from '../common/Heading';
 import FreeSpace from './freeSpace';
+import SmallBoxSection from './boxsection 2/Box';
 
 
 
@@ -31,6 +32,7 @@ const LandingPage = ({referance, inView, entry, pathname}) => {
          <FourthSection referance={referance} inView={inView} entry={entry} />
          <Box />
          <FifthSection />
+         <SmallBoxSection />
          <SixthSection />
         </div>
     )

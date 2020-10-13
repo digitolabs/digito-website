@@ -139,7 +139,7 @@ body {
       display: block; } }
 
 .active {
-  border-bottom: .2rem solid #66bafb;
+  border-bottom: 0.2rem solid #66bafb;
   text-decoration: none; }
 
 .hide {
@@ -188,7 +188,7 @@ body {
   font-size: 1.3rem;
   font-weight: 300;
   margin-bottom: 2rem;
-  transition: all .2s;
+  transition: all 0.2s;
   cursor: pointer;
   z-index: 8; }
   .big-main-card img, .small-main-card img, .middle-card img, .write-code img, .testing img, .features-delivery img, .share-updates img, .client-feedback img, .optimization img, .product-delivery img {
@@ -261,8 +261,8 @@ body {
     .sub-header__link:hover p {
       color: #1187ee; }
     .sub-header__link .icon {
-      margin-right: .5rem;
-      padding: .2rem; }
+      margin-right: 0.5rem;
+      padding: 0.2rem; }
       .sub-header__link .icon img {
         height: 2.2rem;
         width: 2.2rem; }
@@ -273,7 +273,7 @@ body {
         .sub-header__link p {
           color: #fff;
           font-weight: bold;
-          letter-spacing: .5px;
+          letter-spacing: 0.5px;
           text-transform: uppercase; }
         .sub-header__link:hover p {
           color: #fff; } }
@@ -997,39 +997,19 @@ body {
       margin-top: 50%; } }
 
 .box-section {
-  position: relative;
-  margin-bottom: 10rem;
-  border: 2px solid red; }
-  .box-section img {
-    height: 100%;
-    width: 100%; }
-  .box-section__cover {
-    width: 100%;
-    height: 100%;
-    background-color: #020202;
-    position: absolute;
-    color: white;
-    top: 0;
-    left: 0;
-    font-size: 5rem;
-    font-weight: bolder;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center; }
-    @media (max-width: 75em) {
-      .box-section__cover {
-        font-size: 2rem;
-        background-color: #1187ee; }
-        .box-section__cover h1 {
-          width: 80%; } }
-    @media (max-width: 37.5em) {
-      .box-section__cover {
-        font-size: 2rem;
-        background-color: #1187ee; } }
+  height: 80vh;
+  background-image: url("https://res.cloudinary.com/habinezadalvan/image/upload/v1595795055/digitol/spread-box_09.05.45-min_se1qgm.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
   @media (max-width: 37.5em) {
     .box-section {
       display: none; } }
+
+.box-section-2 {
+  height: 40vh;
+  background-image: url("https://res.cloudinary.com/habinezadalvan/image/upload/v1602551262/digitol/Box-70_v1ornv.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
 
 .first-section {
   position: relative;
@@ -1191,9 +1171,7 @@ body {
 
 .fifth-section {
   display: flex;
-  padding: 9rem 10rem 1rem;
-  margin-top: 20rem;
-  margin-bottom: 0rem; }
+  padding: 9rem 10rem 1rem; }
   .fifth-section--left {
     flex-basis: 50%; }
   .fifth-section--right {
