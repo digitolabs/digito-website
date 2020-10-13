@@ -1000,7 +1000,15 @@ body {
   height: 80vh;
   background-image: url("https://res.cloudinary.com/habinezadalvan/image/upload/v1595795055/digitol/spread-box_09.05.45-min_se1qgm.png");
   background-repeat: no-repeat;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .box-section h1 {
+    font-size: 8rem;
+    color: #26A8C7; }
+  .box-section .span {
+    color: #1187ee; }
   @media (max-width: 37.5em) {
     .box-section {
       display: none; } }
